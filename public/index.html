@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>DreamFinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>DreamFinder</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="search">
+                <input type="text" id="searchInput" placeholder="Enter nickname or IP" aria-label="Search input">
+                <select id="searchType" aria-label="Search type">
+                    <option value="user">User</option>
+                    <option value="ip">IP</option>
+                </select>
+                <button id="searchButton" aria-label="Search button">Search</button>
+            </section>
+
+            <section class="result">
+                <div id="resultContainer" aria-live="polite">
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>Made with ❤️ by <a href="https://github.com/GhostIsLegit" target="_blank" rel="noopener noreferrer">GhostIsLegit</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
